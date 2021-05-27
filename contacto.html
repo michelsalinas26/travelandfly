@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlazando con css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Enlazando con google fonts para header y nav -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <!-- Enlazando con google fonts para main -->
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <!-- Enlazando con bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- seo -->
+    <meta name="description" content="Contacto para paquetes turísticos">
+    <meta name="keywords" content="viajes, viajar, vuelos, paquetes, Información, turismo, machu pichu, perú, taj mahal, india, muralla, china, coliseo, roma,italia, chichen itza, méxico, cristo redentor, brasil, petra, jordania">
+    <!-- Título de la página web -->
+
+    <title>CONTACTO - AGENCIA DE TURISMO</title>
+</head>
+
+<body>
+    <div class="body-general" id="contacto">
+        <!-- Nombre de la marca linkeado al index -->
+        <header class="header">
+            <div class="marca-box">
+                <a href="index.html" class="marca-box__enlace">TRAVELAND FLY</a>
+            </div>
+        </header>
+        <!-- Navegador -->
+        <nav class="navegador">
+            <ul class="navegador__lista">
+                <li><a href="index.html" class="a-nav">INICIO</a></li>
+                <li><a href="destinos.html" class="a-nav">DESTINOS</a></li>
+                <li><a href="paquetes.html" class="a-nav">PAQUETES</a></li>
+                <li><a href="galeria.html" class="a-nav">GALERÍA</a></li>
+            </ul>
+        </nav>
+        <section class="section-inicio">
+            <div class="sugerencia">
+                <p class="sugerencia__p">Si desea dejarnos una "Sugerencia", elevar una "Felicitación" o efectuar un "Reclamo", por favor seleccionar la opción correspondiente. Si se trata de un Reclamo se deberían completar de forma obligatoria todos los datos requeridos para
+                    la investigación y análisis del mismo.<br> Agradecemos su contacto, su aporte contribuirá a mejorar nuestro servicio.</p>
+            </div>
+            <div class="div-formulario">
+                <form class="formulario">
+                    <fieldset class="solicitud fieldset">
+                        <legend class="solicitud__leyenda leyenda">Elija una opción</legend>
+                        <div class="solicitud__tipo">
+                            <label for="solicitud">Tipo de solicitud</label>
+                            <br>
+                            <span class="estilo">Sugerencia</span>
+                            <input type="radio" name="solicitud" value="sugerencia">
+                            <span class="estilo">Felicitación</span>
+                            <input type="radio" name="solicitud" value="felicitacion">
+                            <span class="estilo">Reclamo</span>
+                            <input type="radio" name="solicitud" value="reclamo">
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="datos-personales fieldset">
+                        <legend class="datos-personales__leyenda leyenda">Datos personales</legend>
+                        <div class="datos-personales__nombre-apellido">
+                            <label for="nombre" class="estilo">Nombre</label>
+                            <input type="text" name="nombre" placeholder="Ingrese su nombre .... ">
+                            <label for="apellido" class="estilo">Apellido</label>
+                            <input type="text" name="apellido" placeholder="Ingrese su apellido .... ">
+                        </div>
+                        <br>
+                        <div class="datos-personales__edad-email">
+                            <label for="edad" class="estilo">Edad</label>
+                            <input type="text" name="edad" placeholder="Ingrese su edad .... ">
+                            <label for="email" class="estilo">Email</label>
+                            <input type="email" name="email" placeholder="Ingrese su email .... ">
+                        </div>
+                        <br>
+                        <div class="datos-personales__telefono-dni">
+                            <label for="telefono" class="estilo">Teléfono</label>
+                            <input type="text" name="telefono" placeholder="Ingrese su número  .... ">
+                            <label for="Documento" class="estilo">Número de documento</label>
+                            <input type="text" documento="telefono" placeholder="Ingrese su documento  .... ">
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="destino-elegido fieldset">
+                        <legend class="destino-elegido__leyenda leyenda">Destino elegido</legend>
+                        <label for="viaje" class="estilo">Destino</label>
+                        <select name="viaje">
+                                <option value="1" class="estilo">CHICHEN ITZA</option>
+                                <option value="2" class="estilo">COLISEO ROMANO</option>
+                                <option value="3" class="estilo">CRISTO REDENTOR</option>
+                                <option value="4" class="estilo">MACHU PICCHU</option>
+                                <option value="5" class="estilo">MURALLA CHINA</option>
+                                <option value="6" class="estilo">PETRA</option>
+                                <option value="7" class="estilo">TAJ MAHAL</option>
+                            </select>
+                    </fieldset>
+                    <br>
+                    <fieldset class="mensaje fieldset">
+                        <legend class="mensaje__leyenda estilo leyenda">Mensaje</legend>
+                        <br>
+                        <label for="mensaje" class="estilo">Deje su mensaje</label><br><br>
+                        <textarea name="mensaje" rows="10" cols="100"></textarea>
+                    </fieldset>
+                    <br>
+                    <div class="btn-contacto">
+                        <input type="submit" value="Enviar mensaje" class="btn-contacto__input">
+                        <input type="reset" value="Limpiar Formulario" class="btn-contacto__input">
+                    </div>
+                </form>
+                </article>
+            </div>
+            <!-- Pie de página. Formato de una sola linea. Marca y mail de contacto -->
+            <footer class="footer">
+                <h4 class="footer__h4">TRAVEL AND FLY - CONTACTO: MICHELSALINAS26@GMAIL.COM</h4>
+            </footer>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+</body>
+
+</html>
