@@ -1,0 +1,26 @@
+/* ----------------- Pantalla Galería ----------------------------------------------- */
+
+#galeria {
+    background: whitesmoke;
+    width: 100%;
+    .section-inicio {
+        margin-top: 50px;
+        .contenedor-galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 230px);
+            gap: 20px;
+            justify-content: center;
+            margin: 0 auto;
+            .contenedor-galeria__img-galeria {
+                width: 230px;
+                margin-bottom: 40px;
+                border-radius: 15px;
+                cursor: zoom-in;
+                background-color: lightgray;
+            }
+            .contenedor-galeria__img-galeria:hover {
+                filter: opacity(0.9);
+            }
+        }
+    }
+}

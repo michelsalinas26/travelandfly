@@ -1,0 +1,87 @@
+/* ----------------- Pantalla Destinos ----------------------------------------------- */
+
+#destinos {
+    background: white;
+    width: 100%;
+    /* Main principal destinos - div #enlaces */
+    .section-inicio {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        .enlaces-destinos {
+            width: 100%;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            .enlaces-destinos__lista {
+                margin: 10px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                font-size: 1rem;
+                font-family: 'New Tegomin', serif;
+                font-weight: lighter;
+                text-decoration: none;
+                color: #A0999A;
+                .a-destinos {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    font-family: 'New Tegomin', serif;
+                    font-weight: lighter;
+                    text-decoration: none;
+                    color: #A0999A;
+                    text-align: center;
+                }
+                .a-destinos:hover {
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        /* Main principal destinos - div section-table */
+        .section-table {
+            width: 100%;
+            .section-table__table {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .table-tr {
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    padding: 20px;
+                    .table-tr__td {
+                        text-align: center;
+                        width: auto;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .destinos-h2 {
+                            font-size: 2rem;
+                            font-family: 'New Tegomin', serif;
+                            font-weight: lighter;
+                            text-decoration: none;
+                            color: black;
+                        }
+                        .destinos-p {
+                            font-size: 1rem;
+                            font-family: 'New Tegomin', serif;
+                            font-weight: lighter;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

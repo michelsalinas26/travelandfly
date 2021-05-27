@@ -1,0 +1,61 @@
+/* ----------------- Pantalla Contacto ----------------------------------------- */
+
+#contacto {
+    background: white;
+    height: 100vh;
+    .section-inicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .sugerencia {
+            margin: 0 15%;
+            .sugerencia__p {
+                font-size: 1rem;
+                font-weight: 600;
+                text-align: center;
+                line-height: 1;
+                font-family: 'New Tegomin', serif;
+                color: black;
+            }
+        }
+        span {
+            padding: 20px;
+        }
+        .leyenda {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            font-family: 'New Tegomin', serif;
+            color: black;
+            padding: 20px 0;
+        }
+        .solicitud .datos-personales .destino-elegido .mensaje {
+            margin: 50px;
+        }
+        label {
+            padding: 0 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'New Tegomin', serif;
+            color: black;
+        }
+        .solicitud__leyenda {
+            padding: 20px 0;
+        }
+        .fieldset {
+            border: 1px dotted black;
+            padding: 10px;
+        }
+        .btn-contacto {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .btn-contacto__input {
+            margin: 10px;
+        }
+    }
+}

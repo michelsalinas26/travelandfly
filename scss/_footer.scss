@@ -1,0 +1,18 @@
+/* ----------------- Footer ----------------------------------------- */
+
+
+/* Pie de página estilos */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__h4 {
+        font-size: 0.8rem;
+        font-family: 'New Tegomin', serif;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+}

@@ -1,0 +1,35 @@
+/* ----------------- Pantalla Inicio ----------------------------------------- */
+
+
+/* Main principal inicio */
+
+.section-inicio {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .box-inicio {
+        border: solid 1px whitesmoke;
+        border-radius: 2em;
+        margin: auto 20%;
+        background-image: linear-gradient(rgba(247, 243, 243, 0.3), rgba(247, 243, 243, 0.3));
+        .box-inicio__h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1;
+            font-family: 'New Tegomin', serif;
+            color: black;
+        }
+        .box-inicio__p {
+            font-size: 0.9rem;
+            font-family: 'New Tegomin', serif;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.8;
+            padding: 0.8rem 10%;
+        }
+    }
+}

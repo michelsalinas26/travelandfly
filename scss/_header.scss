@@ -1,0 +1,28 @@
+/* ----------------- LOGO/MARCA ----------------------------------------- */
+
+
+/* Header estilos */
+
+.header {
+    grid-area: header;
+    /* En este bloque se define flex para poder centrar la marca  */
+    .marca-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Estilos de la marca */
+        .marca-box__enlace {
+            text-align: center;
+            font-size: 3rem;
+            text-decoration: none;
+            font-family: 'New Tegomin', serif;
+            color: #A0999A;
+            font-weight: lighter;
+            transition: all 2s;
+        }
+        .marca-box__enlace:hover {
+            color: black;
+            font-size: 3.2rem;
+        }
+    }
+}

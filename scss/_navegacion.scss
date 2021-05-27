@@ -1,0 +1,33 @@
+/* ----------------- NAVEGACIÓN ----------------------------------------- */
+
+
+/* Navegador estilos */
+
+
+/* En este bloque se define flex para poder centrar la lista  */
+
+.navegador {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    /* En este bloque se define flex para poder centrar la lista  en forma column */
+    .navegador__lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* estilos al navegador */
+        .a-nav {
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'New Tegomin', serif;
+            font-weight: lighter;
+            text-decoration: none;
+            color: #A0999A;
+        }
+        .a-nav:hover {
+            color: black;
+            font-size: 1.2rem;
+        }
+    }
+}
