@@ -1,61 +1,178 @@
 /* ----------------- Pantalla Contacto ----------------------------------------- */
 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 #contacto {
-    background: white;
-    height: 100vh;
-    .section-inicio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .sugerencia {
-            margin: 0 15%;
-            .sugerencia__p {
-                font-size: 1rem;
-                font-weight: 600;
-                text-align: center;
-                line-height: 1;
-                font-family: 'New Tegomin', serif;
-                color: black;
+    height: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    background: whitesmoke;
+    .contact_form {
+        width: 460px;
+        height: auto;
+        margin: 80px auto;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background-color: #fbfbfb;
+        padding-left: 30px;
+        .formulario {
+            .formulario input:focus {
+                outline: 0;
+                border: 1px solid #97d848;
             }
-        }
-        span {
-            padding: 20px;
-        }
-        .leyenda {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
-            line-height: 1;
-            font-family: 'New Tegomin', serif;
-            color: black;
-            padding: 20px 0;
-        }
-        .solicitud .datos-personales .destino-elegido .mensaje {
-            margin: 50px;
-        }
-        label {
-            padding: 0 10px;
-            font-size: 1rem;
-            font-weight: bold;
-            text-align: center;
-            font-family: 'New Tegomin', serif;
-            color: black;
-        }
-        .solicitud__leyenda {
-            padding: 20px 0;
-        }
-        .fieldset {
-            border: 1px dotted black;
-            padding: 10px;
-        }
-        .btn-contacto {
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-        }
-        .btn-contacto__input {
-            margin: 10px;
+            .formulario textarea:focus {
+                outline: 0;
+                border: 1px solid #97d848;
+            }
+            .formulario_h1 {
+                font-size: 39px;
+                text-align: letf;
+                padding-bottom: 20px;
+                color: #000;
+            }
+            .formulario_h3 {
+                font-size: 16px;
+                padding-bottom: 30px;
+                color: #0e0e0e;
+            }
+            .formulario__form {
+                .name {
+                    font-size: 14px;
+                    color: #0e0e0e;
+                    .name__label {
+                        display: block;
+                        float: center;
+                        .name__label--obligatorio {
+                            color: #000;
+                        }
+                    }
+                    .name__input {
+                        background-color: #fbfbfb;
+                        width: 408px;
+                        height: 40px;
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #000;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+                .email {
+                    font-size: 14px;
+                    color: #0e0e0e;
+                    .email__label {
+                        display: block;
+                        float: center;
+                        .email__label--obligatorio {
+                            color: #000;
+                        }
+                    }
+                    .email__input {
+                        background-color: #fbfbfb;
+                        width: 408px;
+                        height: 40px;
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #000;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+                .telefono {
+                    font-size: 14px;
+                    color: #0e0e0e;
+                    .telefono__label {
+                        display: block;
+                        float: center;
+                        .email__label--obligatorio {
+                            color: #000;
+                        }
+                    }
+                    .telefono__input {
+                        background-color: #fbfbfb;
+                        width: 408px;
+                        height: 40px;
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #000;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+                .asunto {
+                    font-size: 14px;
+                    color: #0e0e0e;
+                    .asunto__label {
+                        display: block;
+                        float: center;
+                        .asunto_label--obligatorio {
+                            color: #000;
+                        }
+                    }
+                    .asunto__input {
+                        background-color: #fbfbfb;
+                        width: 408px;
+                        height: 40px;
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #000;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+                .mensaje {
+                    font-size: 14px;
+                    color: #0e0e0e;
+                    .mensaje__label {
+                        display: block;
+                        float: center;
+                        .mensaje__label--obligatorio {
+                            color: #000;
+                        }
+                    }
+                    .mensaje__textarea {
+                        background-color: #fbfbfb;
+                        width: 405px;
+                        height: 150px;
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #000;
+                        margin-top: 10px;
+                        padding-left: 10px;
+                        margin-bottom: 20px;
+                        padding-top: 15px;
+                    }
+                }
+                .boton-enviar {
+                    height: 45px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    background-color: #0bad6c;
+                    border-color: #000;
+                    border-style: solid;
+                    border-radius: 10px;
+                    width: 420px;
+                    cursor: pointer;
+                    .boton-enviar__p {
+                        color: #fff;
+                    }
+                }
+                .aviso {
+                    font-size: 14px;
+                    color: #0e0e0e;
+                }
+            }
         }
     }
 }

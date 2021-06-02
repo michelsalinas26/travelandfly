@@ -40,78 +40,64 @@
             </ul>
         </nav>
         <section class="section-inicio">
-            <div class="sugerencia">
-                <p class="sugerencia__p">Si desea dejarnos una "Sugerencia", elevar una "Felicitación" o efectuar un "Reclamo", por favor seleccionar la opción correspondiente. Si se trata de un Reclamo se deberían completar de forma obligatoria todos los datos requeridos para
-                    la investigación y análisis del mismo.<br> Agradecemos su contacto, su aporte contribuirá a mejorar nuestro servicio.</p>
+            <!-- formulario de contacto en html y css -->
+
+            <div class="contact_form">
+
+                <div class="formulario">
+                    <h1 class="formulario__h1">Formulario de contacto</h1>
+                    <h3 class="formulario__h3">Escríbenos y en breve nos pondremos en contacto contigo</h3>
+
+
+                    <form class="formulario__form" action="submeter-formulario.php" method="post">
+
+
+                        <p class="name">
+                            <label for="nombre" class="name__label">Nombre
+                                <span class="name__label--obligatorio">*</span>
+                            </label>
+                            <input class="name__input" type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+
+                        <p class="email">
+                            <label class="email__label" for="email">Email
+                                <span class="email__label--obligatorio">*</span>
+                            </label>
+                            <input class="email__input" type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+
+                        <p class="telefono">
+                            <label for="telefone" class="telefono__label">Teléfono
+                            </label>
+                            <input class="telefono__input" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>
+
+                        <p class="asunto">
+                            <label for="asunto" class="asunto__label">Asunto
+                                <span class="asunto__label--obligatorio">*</span>
+                            </label>
+                            <input class="asunto__input" type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>
+
+                        <p class="mensaje">
+                            <label for="mensaje" class="mensaje__label">Mensaje
+                                <span class="mensaje__label--obligatorio">*</span>
+                            </label>
+                            <textarea name="introducir_mensaje" class="mensaje__textarea" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                        </p>
+
+                        <button class="boton-enviar" type="submit" name="enviar_formulario" id="enviar">
+                            <p class="boton-enviar__p">Enviar</p>
+                        </button>
+
+                        <p class="aviso">
+                            <span class="aviso__obligatorio"> * </span>los campos son obligatorios.
+                        </p>
+
+                    </form>
+                </div>
             </div>
-            <div class="div-formulario">
-                <form class="formulario">
-                    <fieldset class="solicitud fieldset">
-                        <legend class="solicitud__leyenda leyenda">Elija una opción</legend>
-                        <div class="solicitud__tipo">
-                            <label for="solicitud">Tipo de solicitud</label>
-                            <br>
-                            <span class="estilo">Sugerencia</span>
-                            <input type="radio" name="solicitud" value="sugerencia">
-                            <span class="estilo">Felicitación</span>
-                            <input type="radio" name="solicitud" value="felicitacion">
-                            <span class="estilo">Reclamo</span>
-                            <input type="radio" name="solicitud" value="reclamo">
-                        </div>
-                    </fieldset>
-                    <br>
-                    <fieldset class="datos-personales fieldset">
-                        <legend class="datos-personales__leyenda leyenda">Datos personales</legend>
-                        <div class="datos-personales__nombre-apellido">
-                            <label for="nombre" class="estilo">Nombre</label>
-                            <input type="text" name="nombre" placeholder="Ingrese su nombre .... ">
-                            <label for="apellido" class="estilo">Apellido</label>
-                            <input type="text" name="apellido" placeholder="Ingrese su apellido .... ">
-                        </div>
-                        <br>
-                        <div class="datos-personales__edad-email">
-                            <label for="edad" class="estilo">Edad</label>
-                            <input type="text" name="edad" placeholder="Ingrese su edad .... ">
-                            <label for="email" class="estilo">Email</label>
-                            <input type="email" name="email" placeholder="Ingrese su email .... ">
-                        </div>
-                        <br>
-                        <div class="datos-personales__telefono-dni">
-                            <label for="telefono" class="estilo">Teléfono</label>
-                            <input type="text" name="telefono" placeholder="Ingrese su número  .... ">
-                            <label for="Documento" class="estilo">Número de documento</label>
-                            <input type="text" documento="telefono" placeholder="Ingrese su documento  .... ">
-                        </div>
-                    </fieldset>
-                    <br>
-                    <fieldset class="destino-elegido fieldset">
-                        <legend class="destino-elegido__leyenda leyenda">Destino elegido</legend>
-                        <label for="viaje" class="estilo">Destino</label>
-                        <select name="viaje">
-                                <option value="1" class="estilo">CHICHEN ITZA</option>
-                                <option value="2" class="estilo">COLISEO ROMANO</option>
-                                <option value="3" class="estilo">CRISTO REDENTOR</option>
-                                <option value="4" class="estilo">MACHU PICCHU</option>
-                                <option value="5" class="estilo">MURALLA CHINA</option>
-                                <option value="6" class="estilo">PETRA</option>
-                                <option value="7" class="estilo">TAJ MAHAL</option>
-                            </select>
-                    </fieldset>
-                    <br>
-                    <fieldset class="mensaje fieldset">
-                        <legend class="mensaje__leyenda estilo leyenda">Mensaje</legend>
-                        <br>
-                        <label for="mensaje" class="estilo">Deje su mensaje</label><br><br>
-                        <textarea name="mensaje" rows="10" cols="100"></textarea>
-                    </fieldset>
-                    <br>
-                    <div class="btn-contacto">
-                        <input type="submit" value="Enviar mensaje" class="btn-contacto__input">
-                        <input type="reset" value="Limpiar Formulario" class="btn-contacto__input">
-                    </div>
-                </form>
-                </article>
-            </div>
+
             <!-- Pie de página. Formato de una sola linea. Marca y mail de contacto -->
             <footer class="footer">
                 <h4 class="footer__h4">TRAVEL AND FLY - CONTACTO: MICHELSALINAS26@GMAIL.COM</h4>
