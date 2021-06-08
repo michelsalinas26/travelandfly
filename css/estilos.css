@@ -60,7 +60,7 @@ body {
     /* Estilos de la marca */ }
     .header .marca-box .marca-box__enlace {
       text-align: center;
-      font-size: 3rem;
+      font-size: 1.9rem;
       text-decoration: none;
       font-family: 'New Tegomin', serif;
       color: #A0999A;
@@ -68,7 +68,7 @@ body {
       transition: all 2s; }
     .header .marca-box .marca-box__enlace:hover {
       color: black;
-      font-size: 3.2rem; }
+      font-size: 2rem; }
 
 /* ----------------- NAVEGACIÓN ----------------------------------------- */
 /* Navegador estilos */
@@ -402,14 +402,17 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 4.5fr 0.5fr; }
   /* ------------ navegacion ------------ */
-  .marca-box__enlace {
+  .header .marca-box .marca-box__enlace {
+    color: #A0999A;
+    font-size: 3rem; }
+  .header .marca-box .marca-box__enlace:hover {
     color: black;
     font-size: 3.5rem; }
-  .navegador__lista {
+  .header .navegador__lista {
     flex-direction: row; }
-    .navegador__lista .a-nav {
+    .header .navegador__lista .a-nav {
       padding: 0 0.5rem; }
-    .navegador__lista .a-nav:hover {
+    .header .navegador__lista .a-nav:hover {
       color: black;
       font-size: 1.2rem; }
   /* ------------ Pantalla Inicio ------------ */
@@ -426,11 +429,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 6.5fr 0.5fr; }
   /* ------------ navegacion ------------ */
-  .marca-box__enlace {
-    font-size: 2rem; }
-  .marca-box__enlace:hover {
+  .header .marca-box .marca-box__enlace {
+    font-size: 3rem; }
+  .header .marca-box .marca-box__enlace:hover {
     color: black;
-    font-size: 2.2rem; }
+    font-size: 3.5rem; }
   .navegador .navegador__lista {
     flex-direction: row;
     align-items: center; }
@@ -479,11 +482,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 4fr 0.5fr; }
   /* ------------ navegacion ------------ */
-  .marca-box__enlace {
-    font-size: 2rem; }
-  .marca-box__enlace:hover {
+  .header .marca-box .marca-box__enlace {
+    font-size: 3rem; }
+  .header .marca-box .marca-box__enlace:hover {
     color: black;
-    font-size: 2.2rem; }
+    font-size: 3.5rem; }
   .navegador .navegador__lista {
     flex-direction: row;
     align-items: center; }
@@ -536,7 +539,7 @@ body {
     font-size: 3rem; }
   .header .marca-box .marca-box__enlace:hover {
     color: black;
-    font-size: 3.1rem; }
+    font-size: 3.5rem; }
   .navegador .navegador__lista {
     flex-direction: row;
     align-items: center; }

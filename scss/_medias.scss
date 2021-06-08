@@ -23,18 +23,26 @@
             grid-template-rows: 1fr 1fr 4.5fr 0.5fr;
         }
         /* ------------ navegacion ------------ */
-        .marca-box__enlace {
-            color: black;
-            font-size: 3.5rem;
-        }
-        .navegador__lista {
-            flex-direction: row;
-            .a-nav {
-                padding: 0 0.5rem;
+        .header {
+            .marca-box {
+                .marca-box__enlace {
+                    color: #A0999A;
+                    font-size: 3rem;
+                }
+                .marca-box__enlace:hover {
+                    color: black;
+                    font-size: 3.5rem;
+                }
             }
-            .a-nav:hover {
-                color: black;
-                font-size: 1.2rem;
+            .navegador__lista {
+                flex-direction: row;
+                .a-nav {
+                    padding: 0 0.5rem;
+                }
+                .a-nav:hover {
+                    color: black;
+                    font-size: 1.2rem;
+                }
             }
         }
         /* ------------ Pantalla Inicio ------------ */
@@ -56,12 +64,16 @@
             grid-template-rows: 0.5fr 6.5fr 0.5fr;
         }
         /* ------------ navegacion ------------ */
-        .marca-box__enlace {
-            font-size: 2rem;
-        }
-        .marca-box__enlace:hover {
-            color: black;
-            font-size: 2.2rem;
+        .header {
+            .marca-box {
+                .marca-box__enlace {
+                    font-size: 3rem;
+                }
+                .marca-box__enlace:hover {
+                    color: black;
+                    font-size: 3.5rem;
+                }
+            }
         }
         .navegador {
             .navegador__lista {
@@ -142,12 +154,16 @@
             grid-template-rows: 0.5fr 4fr 0.5fr;
         }
         /* ------------ navegacion ------------ */
-        .marca-box__enlace {
-            font-size: 2rem;
-        }
-        .marca-box__enlace:hover {
-            color: black;
-            font-size: 2.2rem;
+        .header {
+            .marca-box {
+                .marca-box__enlace {
+                    font-size: 3rem;
+                }
+                .marca-box__enlace:hover {
+                    color: black;
+                    font-size: 3.5rem;
+                }
+            }
         }
         .navegador {
             .navegador__lista {
@@ -237,7 +253,7 @@
                 }
                 .marca-box__enlace:hover {
                     color: black;
-                    font-size: 3.1rem;
+                    font-size: 3.5rem;
                 }
             }
         }
