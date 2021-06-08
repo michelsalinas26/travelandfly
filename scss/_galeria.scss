@@ -1,9 +1,9 @@
 /* ----------------- Pantalla Galería ----------------------------------------------- */
 
 #galeria {
-    background: whitesmoke;
     width: 100%;
     .section-inicio {
+        grid-area: section;
         margin-top: 50px;
         .contenedor-galeria {
             display: grid;
