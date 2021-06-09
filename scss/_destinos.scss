@@ -1,13 +1,10 @@
 /* ----------------- Pantalla Destinos ----------------------------------------------- */
 
 #destinos {
-    /* background: whitesmoke; */
     width: 100%;
-    /* height: 100vh; */
     /* Main principal destinos - div #enlaces */
     .section-inicio {
         grid-area: section;
-        /* margin-top: 50px; */
         display: flex;
         flex-direction: column;
         align-content: center;

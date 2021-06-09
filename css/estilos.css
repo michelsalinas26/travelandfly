@@ -27,7 +27,7 @@
         padding-top: 0.4rem; }
       #index .section-inicio .box-inicio .box-inicio__p {
         font-size: 0.6rem;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
         color: black;
         font-weight: bold;
         text-align: center;
@@ -97,13 +97,10 @@ body {
 
 /* ----------------- Pantalla Destinos ----------------------------------------------- */
 #destinos {
-  /* background: whitesmoke; */
   width: 100%;
-  /* height: 100vh; */
   /* Main principal destinos - div #enlaces */ }
   #destinos .section-inicio {
     grid-area: section;
-    /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -212,139 +209,130 @@ body {
     padding-bottom: 20px;
     background-color: #fbfbfb;
     padding-left: 30px; }
-    .body-general .section-inicio .contact_form .formulario {
-      /* .formulario input:focus {
-                        outline: 0;
-                        border: 1px solid #97d848;
-                    }
-                    .formulario textarea:focus {
-                        outline: 0;
-                        border: 1px solid #97d848;
-                    } */ }
-      .body-general .section-inicio .contact_form .formulario .formulario__h1 {
-        font-size: 39px;
-        text-align: letf;
-        padding-bottom: 20px;
-        color: #000; }
-      .body-general .section-inicio .contact_form .formulario .formulario__h3 {
-        font-size: 16px;
-        padding-bottom: 30px;
-        color: #0e0e0e;
-        text-align: center; }
-      .body-general .section-inicio .contact_form .formulario .formulario__form .name {
-        font-size: 14px;
-        color: #0e0e0e; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .name .name__label {
-          display: block;
-          float: center; }
-          .body-general .section-inicio .contact_form .formulario .formulario__form .name .name__label .name__label--obligatorio {
-            color: #000; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .name .name__input {
-          background-color: #fbfbfb;
-          width: 408px;
-          height: 40px;
-          border-radius: 5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #000;
-          margin-top: 10px;
-          padding-left: 10px;
-          margin-bottom: 20px; }
-      .body-general .section-inicio .contact_form .formulario .formulario__form .email {
-        font-size: 14px;
-        color: #0e0e0e; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .email .email__label {
-          display: block;
-          float: center; }
-          .body-general .section-inicio .contact_form .formulario .formulario__form .email .email__label .email__label--obligatorio {
-            color: #000; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .email .email__input {
-          background-color: #fbfbfb;
-          width: 408px;
-          height: 40px;
-          border-radius: 5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #000;
-          margin-top: 10px;
-          padding-left: 10px;
-          margin-bottom: 20px; }
-      .body-general .section-inicio .contact_form .formulario .formulario__form .telefono {
-        font-size: 14px;
-        color: #0e0e0e; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .telefono .telefono__label {
-          display: block;
-          float: center; }
-          .body-general .section-inicio .contact_form .formulario .formulario__form .telefono .telefono__label .telefono--obligatorio {
-            color: #000; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .telefono .telefono__input {
-          background-color: #fbfbfb;
-          width: 408px;
-          height: 40px;
-          border-radius: 5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #000;
-          margin-top: 10px;
-          padding-left: 10px;
-          margin-bottom: 20px; }
-      .body-general .section-inicio .contact_form .formulario .formulario__form .asunto {
-        font-size: 14px;
-        color: #0e0e0e; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .asunto .asunto__label {
-          display: block;
-          float: center; }
-          .body-general .section-inicio .contact_form .formulario .formulario__form .asunto .asunto__label .asunto_label--obligatorio {
-            color: #000; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .asunto .asunto__input {
-          background-color: #fbfbfb;
-          width: 408px;
-          height: 40px;
-          border-radius: 5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #000;
-          margin-top: 10px;
-          padding-left: 10px;
-          margin-bottom: 20px; }
-      .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje {
-        font-size: 14px;
-        color: #0e0e0e; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje .mensaje__label {
-          display: block;
-          float: center; }
-          .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje .mensaje__label .mensaje__label--obligatorio {
-            color: #000; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje .mensaje__textarea {
-          background-color: #fbfbfb;
-          width: 405px;
-          height: 150px;
-          border-radius: 5px;
-          border-style: solid;
-          border-width: 1px;
-          border-color: #000;
-          margin-top: 10px;
-          padding-left: 10px;
-          margin-bottom: 20px;
-          padding-top: 15px; }
-      .body-general .section-inicio .contact_form .formulario .formulario__form .boton-enviar {
-        height: 45px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        text-transform: uppercase;
-        background-color: #0bad6c;
-        border-color: #000;
+    .body-general .section-inicio .contact_form .formulario .formulario__h1 {
+      font-size: 39px;
+      text-align: letf;
+      padding-bottom: 20px;
+      color: #000; }
+    .body-general .section-inicio .contact_form .formulario .formulario__h3 {
+      font-size: 16px;
+      padding-bottom: 30px;
+      color: #0e0e0e;
+      text-align: center; }
+    .body-general .section-inicio .contact_form .formulario .formulario__form .name {
+      font-size: 14px;
+      color: #0e0e0e; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .name .name__label {
+        display: block;
+        float: center; }
+        .body-general .section-inicio .contact_form .formulario .formulario__form .name .name__label .name__label--obligatorio {
+          color: #000; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .name .name__input {
+        background-color: #fbfbfb;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
         border-style: solid;
-        border-radius: 10px;
-        width: 420px;
-        cursor: pointer; }
-        .body-general .section-inicio .contact_form .formulario .formulario__form .boton-enviar .boton-enviar__p {
-          color: #fff; }
-      .body-general .section-inicio .contact_form .formulario .formulario__form .aviso .aviso__obligatorio {
-        font-size: 14px;
-        color: #0e0e0e; }
+        border-width: 1px;
+        border-color: #000;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px; }
+    .body-general .section-inicio .contact_form .formulario .formulario__form .email {
+      font-size: 14px;
+      color: #0e0e0e; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .email .email__label {
+        display: block;
+        float: center; }
+        .body-general .section-inicio .contact_form .formulario .formulario__form .email .email__label .email__label--obligatorio {
+          color: #000; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .email .email__input {
+        background-color: #fbfbfb;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #000;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px; }
+    .body-general .section-inicio .contact_form .formulario .formulario__form .telefono {
+      font-size: 14px;
+      color: #0e0e0e; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .telefono .telefono__label {
+        display: block;
+        float: center; }
+        .body-general .section-inicio .contact_form .formulario .formulario__form .telefono .telefono__label .telefono--obligatorio {
+          color: #000; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .telefono .telefono__input {
+        background-color: #fbfbfb;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #000;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px; }
+    .body-general .section-inicio .contact_form .formulario .formulario__form .asunto {
+      font-size: 14px;
+      color: #0e0e0e; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .asunto .asunto__label {
+        display: block;
+        float: center; }
+        .body-general .section-inicio .contact_form .formulario .formulario__form .asunto .asunto__label .asunto_label--obligatorio {
+          color: #000; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .asunto .asunto__input {
+        background-color: #fbfbfb;
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #000;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px; }
+    .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje {
+      font-size: 14px;
+      color: #0e0e0e; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje .mensaje__label {
+        display: block;
+        float: center; }
+        .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje .mensaje__label .mensaje__label--obligatorio {
+          color: #000; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .mensaje .mensaje__textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #000;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px; }
+    .body-general .section-inicio .contact_form .formulario .formulario__form .boton-enviar {
+      height: 45px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+      text-transform: uppercase;
+      background-color: #0bad6c;
+      border-color: #000;
+      border-style: solid;
+      border-radius: 10px;
+      width: 420px;
+      cursor: pointer; }
+      .body-general .section-inicio .contact_form .formulario .formulario__form .boton-enviar .boton-enviar__p {
+        color: #fff; }
+    .body-general .section-inicio .contact_form .formulario .formulario__form .aviso .aviso__obligatorio {
+      font-size: 14px;
+      color: #0e0e0e; }
 
 /* ----------------- Pantalla Galería ----------------------------------------------- */
 #galeria {
@@ -416,8 +404,14 @@ body {
       color: black;
       font-size: 1.2rem; }
   /* ------------ Pantalla Inicio ------------ */
-  .section-inicio .box-inicio {
-    margin-top: 0px; } }
+  #index .section-inicio .box-inicio {
+    margin: 0 15%; }
+    #index .section-inicio .box-inicio .box-inicio__h2 {
+      margin-top: 10px;
+      font-size: 1.5rem; }
+    #index .section-inicio .box-inicio .box-inicio__p {
+      font-size: 1rem;
+      padding: 0.9rem 10%; } }
 
 /* Media query para dispositivos entre 769 y 992px - Mobile first */
 @media screen and (min-width: 769px) and (max-width: 992px) {

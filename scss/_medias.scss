@@ -46,9 +46,19 @@
             }
         }
         /* ------------ Pantalla Inicio ------------ */
-        .section-inicio {
-            .box-inicio {
-                margin-top: 0px;
+        #index {
+            .section-inicio {
+                .box-inicio {
+                    margin: 0 15%;
+                    .box-inicio__h2 {
+                        margin-top: 10px;
+                        font-size: 1.5rem;
+                    }
+                    .box-inicio__p {
+                        font-size: 1rem;
+                        padding: 0.9rem 10%;
+                    }
+                }
             }
         }
     }
